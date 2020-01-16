@@ -1,0 +1,45 @@
+
+#Replay{
+
+align-self: end;
+
+
+}
+
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url("images/pirate.jpg");
+    background-size: cover;
+}
+h3{
+    font-size: 50px;
+    color: darkgoldenrod;
+}
+#tentatives{
+    width: 500px;
+
+
+
+}
+
+section{
+    border: gray solid 3px;
+    border-radius: 5px;
+    height: 65vh;
+    background-color: cadetblue;
+}
+input{
+    width: 200px;
+    height: 40px;
+    font-size: x-large;
+    text-align: center;
+}
+button{
+    height: 40px;
+    width: 100px;
+}
+#ButM{
+
+}
