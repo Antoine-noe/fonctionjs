@@ -1,7 +1,6 @@
 
-
 var tentatives=10;
-var ctentatives="il vous reste";
+var ctentatives="yo";
 var trouve=false;
 var gagne="Bravo vous avez gagné !!!";
 var perdu="Vous avez perdu";
@@ -22,19 +21,18 @@ var z=" ";
  var p3=document.querySelector('#tentatives');
 var p4=document.querySelector('#resultat');
 var p5=document.querySelector('#Rejouer');
-var p6=document.querySelector('spn');
+var p6=document.querySelector('#spn');
+
 
 p5.disabled=true;
 
 p2.addEventListener('click', test);
 p5.addEventListener('click', reset);
 
-
-
 function test()
 {
 
-if (tentatives > 0){
+if (tentatives >= 1){
         var saisie = parseInt(p1.value);
         if (saisie === nombreM)
         {
@@ -48,7 +46,10 @@ if (tentatives > 0){
 
         } else {
                 tentatives--;
-
+                ctentatives="Il vous reste : " + tentatives+ " Tentatives.";
+                p6.innerHTML=ctentatives;
+                p6.style.color='white';
+                p6.style.fontSize='x-large';
                 nTentatives = nTentatives+ " " + saisie;
                 p4.innerHTML=nTentatives;
                 p4.style.fontSize='X-large';
@@ -86,3 +87,5 @@ function reset()
 {
     document.location.reload(true);
 }
+
+
